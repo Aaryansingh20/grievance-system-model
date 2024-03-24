@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Grievance Redressal System</title>
+<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+  <div class="hamburger-menu">
+    <input id="menu__toggle" type="checkbox" />
+    <label class="menu__btn" for="menu__toggle">
+      <span></span>
+    </label>
+        
+    <ul class="menu__box">
+        <div class="head">
+            <h2>Grievence</h2>
+        </div>
+        
+      <li><a class="menu__item" href="dashB.html">DashBoard</a></li>
+			<li><a class="menu__item" href="index.html">Complaint</a></li>
+			<li><a class="menu__item" href="team.html">Team</a></li>
+			<li><a class="menu__item" href="user.html"> User Account</a></li>
+    </ul>
+  </div>
+
+<div class="container">
+  <h1>Post Complaint</h1>
+
+  <!-- Complaint form -->
+  <form id="complaintForm">
+    <label for="complaintTitle">Complaint Title:</label><br>
+    <input type="text" id="complaintTitle" name="complaintTitle" required><br>
+    <label for="complaintDescription">Complaint Description:</label><br>
+    <textarea id="complaintDescription" name="complaintDescription" rows="4" required></textarea><br>
+    <button type="submit">Submit Complaint</button>
+  </form>
+
+  <hr>
+
+  <!-- List of complaints -->
+  <h2>Complaints:</h2>
+  <ul id="complaintList"></ul>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
